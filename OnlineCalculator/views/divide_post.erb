@@ -1,0 +1,14 @@
+<% @calculator = Calculator.new(params[:first_number].to_i, params[:second_number].to_i)%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
+</head>
+<body>
+<div class = "wrapper">
+<h1> The result of diving <%=params[:first_number]%> and  <%=params[:second_number]%> is <%=@calculator.divide%></h1>
+</div>
+</body>
+</html>

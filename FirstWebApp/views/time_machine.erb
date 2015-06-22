@@ -1,0 +1,6 @@
+<h1><% if @sign == "+"%>
+		<%= @digits%> hours ahead will be <%= @future_time.strftime("%l:%M:%S%p")%>
+	<% else %>
+		<%= @digits%> hours ago will be <%= @past_time.strftime("%l:%M:%S%p")%>
+	<% end %>
+</h1>
